@@ -14,6 +14,8 @@
 		175CD5942626DCB800A0EE37 /* EveryLifeCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5932626DCB800A0EE37 /* EveryLifeCareTests.swift */; };
 		175CD59F2626DCB800A0EE37 /* EveryLifeCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD59E2626DCB800A0EE37 /* EveryLifeCareUITests.swift */; };
 		175CD5B12626E65800A0EE37 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 175CD5B02626E65800A0EE37 /* GRDB */; };
+		175CD5BA2626E71400A0EE37 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5B92626E71400A0EE37 /* Task.swift */; };
+		175CD5C22626E72F00A0EE37 /* Task+Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5C12626E72F00A0EE37 /* Task+Fetchable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		175CD59A2626DCB800A0EE37 /* EveryLifeCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryLifeCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		175CD59E2626DCB800A0EE37 /* EveryLifeCareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryLifeCareUITests.swift; sourceTree = "<group>"; };
 		175CD5A02626DCB800A0EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175CD5B92626E71400A0EE37 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		175CD5C12626E72F00A0EE37 /* Task+Fetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Fetchable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		175CD5802626DCB700A0EE37 /* EveryLifeCare */ = {
 			isa = PBXGroup;
 			children = (
+				175CD5B82626E70100A0EE37 /* Data Model */,
 				175CD5812626DCB700A0EE37 /* EveryLifeCareApp.swift */,
 				175CD5832626DCB700A0EE37 /* ContentView.swift */,
 				175CD5852626DCB800A0EE37 /* Assets.xcassets */,
@@ -130,6 +135,15 @@
 				175CD5A02626DCB800A0EE37 /* Info.plist */,
 			);
 			path = EveryLifeCareUITests;
+			sourceTree = "<group>";
+		};
+		175CD5B82626E70100A0EE37 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				175CD5B92626E71400A0EE37 /* Task.swift */,
+				175CD5C12626E72F00A0EE37 /* Task+Fetchable.swift */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				175CD5842626DCB700A0EE37 /* ContentView.swift in Sources */,
+				175CD5BA2626E71400A0EE37 /* Task.swift in Sources */,
 				175CD5822626DCB700A0EE37 /* EveryLifeCareApp.swift in Sources */,
+				175CD5C22626E72F00A0EE37 /* Task+Fetchable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
