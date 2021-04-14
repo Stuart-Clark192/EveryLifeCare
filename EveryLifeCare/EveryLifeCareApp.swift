@@ -11,7 +11,8 @@ import SwiftUI
 struct EveryLifeCareApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = TaskModelBuilder.buildTaskListViewModel()
+            TaskList(viewModel: viewModel)
         }
     }
 }

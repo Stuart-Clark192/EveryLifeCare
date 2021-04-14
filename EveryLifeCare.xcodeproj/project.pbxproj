@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		175CD5822626DCB700A0EE37 /* EveryLifeCareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5812626DCB700A0EE37 /* EveryLifeCareApp.swift */; };
-		175CD5842626DCB700A0EE37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5832626DCB700A0EE37 /* ContentView.swift */; };
 		175CD5862626DCB800A0EE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175CD5852626DCB800A0EE37 /* Assets.xcassets */; };
 		175CD5892626DCB800A0EE37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175CD5882626DCB800A0EE37 /* Preview Assets.xcassets */; };
 		175CD5B12626E65800A0EE37 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 175CD5B02626E65800A0EE37 /* GRDB */; };
@@ -36,6 +35,8 @@
 		175CD6602627435E00A0EE37 /* TaskListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD65F2627435E00A0EE37 /* TaskListViewModelTests.swift */; };
 		175CD6682627446100A0EE37 /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD6672627446100A0EE37 /* HTTPClientSpy.swift */; };
 		175CD66D262744CC00A0EE37 /* TestTaskExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD66C262744CC00A0EE37 /* TestTaskExamples.swift */; };
+		175CD67A26277B2800A0EE37 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD67926277B2800A0EE37 /* TaskList.swift */; };
+		175CD67F26277B5400A0EE37 /* TaskModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD67E26277B5400A0EE37 /* TaskModelBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,6 @@
 /* Begin PBXFileReference section */
 		175CD57E2626DCB700A0EE37 /* EveryLifeCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryLifeCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175CD5812626DCB700A0EE37 /* EveryLifeCareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryLifeCareApp.swift; sourceTree = "<group>"; };
-		175CD5832626DCB700A0EE37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		175CD5852626DCB800A0EE37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		175CD5882626DCB800A0EE37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		175CD58A2626DCB800A0EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +81,8 @@
 		175CD65F2627435E00A0EE37 /* TaskListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModelTests.swift; sourceTree = "<group>"; };
 		175CD6672627446100A0EE37 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		175CD66C262744CC00A0EE37 /* TestTaskExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskExamples.swift; sourceTree = "<group>"; };
+		175CD67926277B2800A0EE37 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		175CD67E26277B5400A0EE37 /* TaskModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModelBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,13 +125,13 @@
 		175CD5802626DCB700A0EE37 /* EveryLifeCare */ = {
 			isa = PBXGroup;
 			children = (
+				175CD67D26277B3D00A0EE37 /* ModelBuilder */,
 				175CD6582627424900A0EE37 /* View Models */,
 				175CD6382627403300A0EE37 /* Views */,
 				175CD5F826271D3400A0EE37 /* Database */,
 				175CD5C62626EA0600A0EE37 /* Network */,
 				175CD5B82626E70100A0EE37 /* Data Model */,
 				175CD5812626DCB700A0EE37 /* EveryLifeCareApp.swift */,
-				175CD5832626DCB700A0EE37 /* ContentView.swift */,
 				175CD5852626DCB800A0EE37 /* Assets.xcassets */,
 				175CD58A2626DCB800A0EE37 /* Info.plist */,
 				175CD5872626DCB800A0EE37 /* Preview Content */,
@@ -240,6 +242,7 @@
 				175CD6412627418B00A0EE37 /* BannerView.swift */,
 				175CD646262741B500A0EE37 /* FilterBar.swift */,
 				175CD6532627422C00A0EE37 /* TaskView.swift */,
+				175CD67926277B2800A0EE37 /* TaskList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,6 +261,14 @@
 				175CD65F2627435E00A0EE37 /* TaskListViewModelTests.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		175CD67D26277B3D00A0EE37 /* ModelBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				175CD67E26277B5400A0EE37 /* TaskModelBuilder.swift */,
+			);
+			path = ModelBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +381,6 @@
 				175CD621262724A900A0EE37 /* TaskAPI.swift in Sources */,
 				175CD626262724CB00A0EE37 /* TaskMapper.swift in Sources */,
 				175CD5FA26271D4900A0EE37 /* SQLDatabase.swift in Sources */,
-				175CD5842626DCB700A0EE37 /* ContentView.swift in Sources */,
 				175CD65A2627432500A0EE37 /* TaskListViewModel.swift in Sources */,
 				175CD647262741B500A0EE37 /* FilterBar.swift in Sources */,
 				175CD6422627418B00A0EE37 /* BannerView.swift in Sources */,
@@ -379,8 +389,10 @@
 				175CD60426271D9100A0EE37 /* SQLDatabase+DataStore.swift in Sources */,
 				175CD6542627422C00A0EE37 /* TaskView.swift in Sources */,
 				175CD5FF26271D6900A0EE37 /* DatabaseTable.swift in Sources */,
+				175CD67A26277B2800A0EE37 /* TaskList.swift in Sources */,
 				175CD5BA2626E71400A0EE37 /* Task.swift in Sources */,
 				175CD5822626DCB700A0EE37 /* EveryLifeCareApp.swift in Sources */,
+				175CD67F26277B5400A0EE37 /* TaskModelBuilder.swift in Sources */,
 				175CD5C22626E72F00A0EE37 /* Task+Fetchable.swift in Sources */,
 				175CD60926271DCF00A0EE37 /* TaskDataStore.swift in Sources */,
 				175CD5D02626EE1800A0EE37 /* URLSessionHTTPClient.swift in Sources */,
