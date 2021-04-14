@@ -11,11 +11,14 @@
 		175CD5842626DCB700A0EE37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5832626DCB700A0EE37 /* ContentView.swift */; };
 		175CD5862626DCB800A0EE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175CD5852626DCB800A0EE37 /* Assets.xcassets */; };
 		175CD5892626DCB800A0EE37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175CD5882626DCB800A0EE37 /* Preview Assets.xcassets */; };
-		175CD5942626DCB800A0EE37 /* EveryLifeCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5932626DCB800A0EE37 /* EveryLifeCareTests.swift */; };
 		175CD59F2626DCB800A0EE37 /* EveryLifeCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD59E2626DCB800A0EE37 /* EveryLifeCareUITests.swift */; };
 		175CD5B12626E65800A0EE37 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 175CD5B02626E65800A0EE37 /* GRDB */; };
 		175CD5BA2626E71400A0EE37 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5B92626E71400A0EE37 /* Task.swift */; };
 		175CD5C22626E72F00A0EE37 /* Task+Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5C12626E72F00A0EE37 /* Task+Fetchable.swift */; };
+		175CD5C82626EDFD00A0EE37 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5C72626EDFD00A0EE37 /* HTTPClient.swift */; };
+		175CD5D02626EE1800A0EE37 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5CF2626EE1800A0EE37 /* URLSessionHTTPClient.swift */; };
+		175CD5D92626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5D82626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift */; };
+		175CD5E12626EEC200A0EE37 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5E02626EEC200A0EE37 /* URLSessionHTTPClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +46,16 @@
 		175CD5882626DCB800A0EE37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		175CD58A2626DCB800A0EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175CD58F2626DCB800A0EE37 /* EveryLifeCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryLifeCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		175CD5932626DCB800A0EE37 /* EveryLifeCareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryLifeCareTests.swift; sourceTree = "<group>"; };
 		175CD5952626DCB800A0EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175CD59A2626DCB800A0EE37 /* EveryLifeCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryLifeCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		175CD59E2626DCB800A0EE37 /* EveryLifeCareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryLifeCareUITests.swift; sourceTree = "<group>"; };
 		175CD5A02626DCB800A0EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175CD5B92626E71400A0EE37 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		175CD5C12626E72F00A0EE37 /* Task+Fetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Fetchable.swift"; sourceTree = "<group>"; };
+		175CD5C72626EDFD00A0EE37 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		175CD5CF2626EE1800A0EE37 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		175CD5D82626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		175CD5E02626EEC200A0EE37 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		175CD5802626DCB700A0EE37 /* EveryLifeCare */ = {
 			isa = PBXGroup;
 			children = (
+				175CD5C62626EA0600A0EE37 /* Network */,
 				175CD5B82626E70100A0EE37 /* Data Model */,
 				175CD5812626DCB700A0EE37 /* EveryLifeCareApp.swift */,
 				175CD5832626DCB700A0EE37 /* ContentView.swift */,
@@ -122,8 +129,9 @@
 		175CD5922626DCB800A0EE37 /* EveryLifeCareTests */ = {
 			isa = PBXGroup;
 			children = (
-				175CD5932626DCB800A0EE37 /* EveryLifeCareTests.swift */,
+				175CD5D72626EE4800A0EE37 /* Helpers */,
 				175CD5952626DCB800A0EE37 /* Info.plist */,
+				175CD5E02626EEC200A0EE37 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = EveryLifeCareTests;
 			sourceTree = "<group>";
@@ -144,6 +152,23 @@
 				175CD5C12626E72F00A0EE37 /* Task+Fetchable.swift */,
 			);
 			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		175CD5C62626EA0600A0EE37 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				175CD5C72626EDFD00A0EE37 /* HTTPClient.swift */,
+				175CD5CF2626EE1800A0EE37 /* URLSessionHTTPClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		175CD5D72626EE4800A0EE37 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				175CD5D82626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +244,7 @@
 					};
 					175CD58E2626DCB800A0EE37 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 175CD57D2626DCB700A0EE37;
 					};
 					175CD5992626DCB800A0EE37 = {
@@ -282,9 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				175CD5842626DCB700A0EE37 /* ContentView.swift in Sources */,
+				175CD5C82626EDFD00A0EE37 /* HTTPClient.swift in Sources */,
 				175CD5BA2626E71400A0EE37 /* Task.swift in Sources */,
 				175CD5822626DCB700A0EE37 /* EveryLifeCareApp.swift in Sources */,
 				175CD5C22626E72F00A0EE37 /* Task+Fetchable.swift in Sources */,
+				175CD5D02626EE1800A0EE37 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				175CD5942626DCB800A0EE37 /* EveryLifeCareTests.swift in Sources */,
+				175CD5D92626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				175CD5E12626EEC200A0EE37 /* URLSessionHTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +514,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7947CFF545;
 				INFOPLIST_FILE = EveryLifeCareTests/Info.plist;
@@ -496,6 +526,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scmotech.EveryLifeCareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EveryLifeCare.app/EveryLifeCare";
@@ -507,6 +538,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7947CFF545;
 				INFOPLIST_FILE = EveryLifeCareTests/Info.plist;
