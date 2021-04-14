@@ -157,8 +157,7 @@
 		175CD5C62626EA0600A0EE37 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				175CD5C72626EDFD00A0EE37 /* HTTPClient.swift */,
-				175CD5CF2626EE1800A0EE37 /* URLSessionHTTPClient.swift */,
+				175CD5EA26271C7000A0EE37 /* HTTPClient */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -169,6 +168,15 @@
 				175CD5D82626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		175CD5EA26271C7000A0EE37 /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				175CD5C72626EDFD00A0EE37 /* HTTPClient.swift */,
+				175CD5CF2626EE1800A0EE37 /* URLSessionHTTPClient.swift */,
+			);
+			path = HTTPClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
