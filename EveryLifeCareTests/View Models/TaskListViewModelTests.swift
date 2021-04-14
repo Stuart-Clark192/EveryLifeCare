@@ -14,7 +14,7 @@ class TaskListViewModelTests: XCTestCase {
     private var cancellableStore: Set<AnyCancellable> = []
     
     func test_fectchingTasks_WithHTTP200StatusCode_EmitsTasks() {
-        
+
         let (sut, client, testQueue) = makeSUT()
         let (task, task1Json) = TestTaskExamples.makeTask(id: 1, name: "Test", description: "Description", type: "medication")
         let data = TestTaskExamples.makeTasksData([task1Json])
@@ -22,7 +22,7 @@ class TaskListViewModelTests: XCTestCase {
         var receivedTasks: [Task] = []
         sut.fetchTasks()
         client.complete(withStatusCode: 200, data: data)
-        
+
         sut
             .taskList
             .publisher
@@ -33,22 +33,22 @@ class TaskListViewModelTests: XCTestCase {
                 exp.fulfill()
             }
             .store(in: &cancellableStore)
-        
-        
+
+
         wait(for: [exp], timeout: 1.0)
-        
+
         XCTAssertFalse(sut.isLoading)
         XCTAssertEqual(receivedTasks, [task])
     }
-    
+
     func test_fectchingTasks_WithErrorCode_EmitsError() {
-        
+
         let (sut, client, testQueue) = makeSUT()
         let exp = expectation(description: "error set")
         sut.fetchTasks()
-        
+
         client.complete(with: anyNSError())
-        
+
         sut
             .taskList
             .publisher
@@ -58,11 +58,11 @@ class TaskListViewModelTests: XCTestCase {
                 exp.fulfill()
             }
             .store(in: &cancellableStore)
-    
+
         wait(for: [exp], timeout: 1.0)
         XCTAssertTrue(sut.isError)
     }
-    
+
     func test_updateFilters_setsCorrectlyFilteredTasks() {
         let (sut, client, testQueue) = makeSUT()
         let (medicationTask, task1Json) = TestTaskExamples.makeTask(id: 1, name: "Test", description: "Description", type: "medication")
@@ -72,7 +72,7 @@ class TaskListViewModelTests: XCTestCase {
         var receivedTasks: [Task] = []
         sut.fetchTasks()
         client.complete(withStatusCode: 200, data: data)
-        
+
         sut.updateFilters(filtersSelected: ["hydration"])
         sut
             .taskList
@@ -84,11 +84,11 @@ class TaskListViewModelTests: XCTestCase {
                 exp.fulfill()
             }
             .store(in: &cancellableStore)
-        
-        
+
+
         wait(for: [exp], timeout: 1.0)
         XCTAssertEqual(receivedTasks, [hydrationTask])
-        
+
     }
     
     // MARK: Helpers

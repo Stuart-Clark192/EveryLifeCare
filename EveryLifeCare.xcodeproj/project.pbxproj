@@ -37,6 +37,7 @@
 		175CD66D262744CC00A0EE37 /* TestTaskExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD66C262744CC00A0EE37 /* TestTaskExamples.swift */; };
 		175CD67A26277B2800A0EE37 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD67926277B2800A0EE37 /* TaskList.swift */; };
 		175CD67F26277B5400A0EE37 /* TaskModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD67E26277B5400A0EE37 /* TaskModelBuilder.swift */; };
+		175CD68826277DB700A0EE37 /* SQLDatabase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD68726277DB700A0EE37 /* SQLDatabase+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		175CD66C262744CC00A0EE37 /* TestTaskExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskExamples.swift; sourceTree = "<group>"; };
 		175CD67926277B2800A0EE37 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		175CD67E26277B5400A0EE37 /* TaskModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModelBuilder.swift; sourceTree = "<group>"; };
+		175CD68726277DB700A0EE37 /* SQLDatabase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SQLDatabase+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,16 +127,16 @@
 		175CD5802626DCB700A0EE37 /* EveryLifeCare */ = {
 			isa = PBXGroup;
 			children = (
+				175CD5852626DCB800A0EE37 /* Assets.xcassets */,
+				175CD5812626DCB700A0EE37 /* EveryLifeCareApp.swift */,
+				175CD58A2626DCB800A0EE37 /* Info.plist */,
+				175CD5B82626E70100A0EE37 /* Data Model */,
+				175CD5F826271D3400A0EE37 /* Database */,
 				175CD67D26277B3D00A0EE37 /* ModelBuilder */,
+				175CD5C62626EA0600A0EE37 /* Network */,
+				175CD5872626DCB800A0EE37 /* Preview Content */,
 				175CD6582627424900A0EE37 /* View Models */,
 				175CD6382627403300A0EE37 /* Views */,
-				175CD5F826271D3400A0EE37 /* Database */,
-				175CD5C62626EA0600A0EE37 /* Network */,
-				175CD5B82626E70100A0EE37 /* Data Model */,
-				175CD5812626DCB700A0EE37 /* EveryLifeCareApp.swift */,
-				175CD5852626DCB800A0EE37 /* Assets.xcassets */,
-				175CD58A2626DCB800A0EE37 /* Info.plist */,
-				175CD5872626DCB800A0EE37 /* Preview Content */,
 			);
 			path = EveryLifeCare;
 			sourceTree = "<group>";
@@ -150,12 +152,13 @@
 		175CD5922626DCB800A0EE37 /* EveryLifeCareTests */ = {
 			isa = PBXGroup;
 			children = (
-				175CD65E2627434200A0EE37 /* View Models */,
-				175CD62A2627252800A0EE37 /* TaskAPI */,
 				175CD60F26271E4E00A0EE37 /* DataStore */,
-				175CD60E26271E3F00A0EE37 /* HTTPClient */,
+				175CD68626277D5500A0EE37 /* Extensions */,
 				175CD5D72626EE4800A0EE37 /* Helpers */,
+				175CD60E26271E3F00A0EE37 /* HTTPClient */,
 				175CD5952626DCB800A0EE37 /* Info.plist */,
+				175CD62A2627252800A0EE37 /* TaskAPI */,
+				175CD65E2627434200A0EE37 /* View Models */,
 			);
 			path = EveryLifeCareTests;
 			sourceTree = "<group>";
@@ -173,8 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				175CD5EA26271C7000A0EE37 /* HTTPClient */,
-				175CD61B2627249000A0EE37 /* TaskLoader.swift */,
 				175CD620262724A900A0EE37 /* TaskAPI.swift */,
+				175CD61B2627249000A0EE37 /* TaskLoader.swift */,
 				175CD625262724CB00A0EE37 /* TaskMapper.swift */,
 			);
 			path = Network;
@@ -183,8 +186,8 @@
 		175CD5D72626EE4800A0EE37 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				175CD5D82626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift */,
 				175CD66C262744CC00A0EE37 /* TestTaskExamples.swift */,
+				175CD5D82626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -201,8 +204,8 @@
 		175CD5F826271D3400A0EE37 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				175CD5F926271D4900A0EE37 /* SQLDatabase.swift */,
 				175CD5FE26271D6900A0EE37 /* DatabaseTable.swift */,
+				175CD5F926271D4900A0EE37 /* SQLDatabase.swift */,
 				175CD60326271D9100A0EE37 /* SQLDatabase+DataStore.swift */,
 				175CD60826271DCF00A0EE37 /* TaskDataStore.swift */,
 			);
@@ -212,8 +215,8 @@
 		175CD60E26271E3F00A0EE37 /* HTTPClient */ = {
 			isa = PBXGroup;
 			children = (
-				175CD5E02626EEC200A0EE37 /* URLSessionHTTPClientTests.swift */,
 				175CD6672627446100A0EE37 /* HTTPClientSpy.swift */,
+				175CD5E02626EEC200A0EE37 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = HTTPClient;
 			sourceTree = "<group>";
@@ -229,8 +232,8 @@
 		175CD62A2627252800A0EE37 /* TaskAPI */ = {
 			isa = PBXGroup;
 			children = (
-				175CD62B2627253B00A0EE37 /* TaskMapperTests.swift */,
 				175CD633262736C900A0EE37 /* TaskAPITests.swift */,
+				175CD62B2627253B00A0EE37 /* TaskMapperTests.swift */,
 			);
 			path = TaskAPI;
 			sourceTree = "<group>";
@@ -238,11 +241,11 @@
 		175CD6382627403300A0EE37 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				175CD6392627405000A0EE37 /* LoadingSpinnerView.swift */,
 				175CD6412627418B00A0EE37 /* BannerView.swift */,
 				175CD646262741B500A0EE37 /* FilterBar.swift */,
-				175CD6532627422C00A0EE37 /* TaskView.swift */,
+				175CD6392627405000A0EE37 /* LoadingSpinnerView.swift */,
 				175CD67926277B2800A0EE37 /* TaskList.swift */,
+				175CD6532627422C00A0EE37 /* TaskView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,6 +272,14 @@
 				175CD67E26277B5400A0EE37 /* TaskModelBuilder.swift */,
 			);
 			path = ModelBuilder;
+			sourceTree = "<group>";
+		};
+		175CD68626277D5500A0EE37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				175CD68726277DB700A0EE37 /* SQLDatabase+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +416,7 @@
 			files = (
 				175CD5D92626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				175CD66D262744CC00A0EE37 /* TestTaskExamples.swift in Sources */,
+				175CD68826277DB700A0EE37 /* SQLDatabase+Extensions.swift in Sources */,
 				175CD5E12626EEC200A0EE37 /* URLSessionHTTPClientTests.swift in Sources */,
 				175CD634262736C900A0EE37 /* TaskAPITests.swift in Sources */,
 				175CD6602627435E00A0EE37 /* TaskListViewModelTests.swift in Sources */,
