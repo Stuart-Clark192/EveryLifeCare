@@ -55,8 +55,8 @@ class TaskAPITests: XCTestCase {
         let url = "https://a-given-url.com"
         let (sut, client) = makeSUT(url: url)
         
-        let (task, task1Json) = makeTask(id: 1, name: "Test", description: "Description", type: "medication")
-        let data = makeTasksData([task1Json])
+        let (task, task1Json) = TestTaskExamples.makeTask(id: 1, name: "Test", description: "Description", type: "medication")
+        let data = TestTaskExamples.makeTasksData([task1Json])
         let exp = expectation(description: "tasks returned")
         var receivedTask: Task?
         
@@ -78,6 +78,49 @@ class TaskAPITests: XCTestCase {
         XCTAssertEqual(task, receivedTask)
     }
     
+    func test_fetchTasks_ReturnsNoUrl_whenInvalidURLGiven() throws {
+        let url = ""
+        let (sut, _) = makeSUT(url: url)
+        
+        let exp = expectation(description: "error returned")
+        var receivedError: TaskAPI.Error?
+        
+        sut.fetchTasks() { completion in
+            
+            if case let .failure(error) = completion {
+                receivedError = error
+                exp.fulfill()
+            } else {
+                XCTFail("Expected Error, got \(completion)")
+            }
+        }
+    
+        wait(for: [exp], timeout: 1.0)
+        XCTAssertEqual(receivedError, TaskAPI.Error.noURL)
+    }
+    
+    func test_fetchTasks_ReturnsInvalidData_whenInvalidDataIsReturned() throws {
+        let (sut, client) = makeSUT()
+        
+        let exp = expectation(description: "error returned")
+        var receivedError: TaskAPI.Error?
+        
+        sut.fetchTasks() { completion in
+            
+            if case let .failure(error) = completion {
+                receivedError = error
+                exp.fulfill()
+            } else {
+                XCTFail("Expected Error, got \(completion)")
+            }
+        }
+        
+        client.complete(withStatusCode: 200, data: anyData())
+    
+        wait(for: [exp], timeout: 1.0)
+        XCTAssertEqual(receivedError, TaskAPI.Error.invalidData)
+    }
+    
     // MARK: Helpers
     private func makeSUT(url: String = "https://a-url.com",
                          file: StaticString = #file,
@@ -92,47 +135,7 @@ class TaskAPITests: XCTestCase {
         return (sut, client)
     }
     
-    private class HTTPClientSpy: HTTPClient {
-        private var messages = [(url: URL, completion: (Result) -> Void)]()
-        
-        var requestedURLs: [URL] {
-            return messages.map { $0.url }
-        }
-        
-        func get(from url: URL, completion: @escaping (Result) -> Void) {
-            messages.append((url, completion))
-        }
-        
-        func complete(withStatusCode code: Int, data: Data , at index: Int = 0) {
-            let response = HTTPURLResponse(
-                url: requestedURLs[index],
-                statusCode: code,
-                httpVersion: nil,
-                headerFields: nil
-            )!
-            messages[index].completion(.success((data, response)))
-        }
-    }
-    
-    private func makeTask(id: Int,
-                          name: String,
-                          description: String,
-                          type: String) -> (model: Task, json: [String: Any]) {
-        
-        let task = Task(id: id, name: name, description: description, type: type)
-        
-        // Swift 5
-        let jsonTasks = [
-            "id": task.id,
-            "name": task.name,
-            "description": task.description,
-            "type": task.type
-        ].compactMapValues { $0 }
-        
-        return (task, jsonTasks)
-    }
-    
-    private func makeTasksData(_ tasks: [[String: Any]]) -> Data {
-        return try! JSONSerialization.data(withJSONObject: tasks)
+    private func anyData() -> Data {
+        Data("any data".utf8)
     }
 }

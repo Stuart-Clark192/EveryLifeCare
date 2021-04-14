@@ -11,7 +11,6 @@
 		175CD5842626DCB700A0EE37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5832626DCB700A0EE37 /* ContentView.swift */; };
 		175CD5862626DCB800A0EE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175CD5852626DCB800A0EE37 /* Assets.xcassets */; };
 		175CD5892626DCB800A0EE37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175CD5882626DCB800A0EE37 /* Preview Assets.xcassets */; };
-		175CD59F2626DCB800A0EE37 /* EveryLifeCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD59E2626DCB800A0EE37 /* EveryLifeCareUITests.swift */; };
 		175CD5B12626E65800A0EE37 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 175CD5B02626E65800A0EE37 /* GRDB */; };
 		175CD5BA2626E71400A0EE37 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5B92626E71400A0EE37 /* Task.swift */; };
 		175CD5C22626E72F00A0EE37 /* Task+Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5C12626E72F00A0EE37 /* Task+Fetchable.swift */; };
@@ -33,17 +32,14 @@
 		175CD6422627418B00A0EE37 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD6412627418B00A0EE37 /* BannerView.swift */; };
 		175CD647262741B500A0EE37 /* FilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD646262741B500A0EE37 /* FilterBar.swift */; };
 		175CD6542627422C00A0EE37 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD6532627422C00A0EE37 /* TaskView.swift */; };
+		175CD65A2627432500A0EE37 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD6592627432500A0EE37 /* TaskListViewModel.swift */; };
+		175CD6602627435E00A0EE37 /* TaskListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD65F2627435E00A0EE37 /* TaskListViewModelTests.swift */; };
+		175CD6682627446100A0EE37 /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD6672627446100A0EE37 /* HTTPClientSpy.swift */; };
+		175CD66D262744CC00A0EE37 /* TestTaskExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD66C262744CC00A0EE37 /* TestTaskExamples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		175CD5902626DCB800A0EE37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 175CD5762626DCB700A0EE37 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 175CD57D2626DCB700A0EE37;
-			remoteInfo = EveryLifeCare;
-		};
-		175CD59B2626DCB800A0EE37 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 175CD5762626DCB700A0EE37 /* Project object */;
 			proxyType = 1;
@@ -61,9 +57,6 @@
 		175CD58A2626DCB800A0EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175CD58F2626DCB800A0EE37 /* EveryLifeCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryLifeCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		175CD5952626DCB800A0EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		175CD59A2626DCB800A0EE37 /* EveryLifeCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryLifeCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		175CD59E2626DCB800A0EE37 /* EveryLifeCareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryLifeCareUITests.swift; sourceTree = "<group>"; };
-		175CD5A02626DCB800A0EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175CD5B92626E71400A0EE37 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		175CD5C12626E72F00A0EE37 /* Task+Fetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Fetchable.swift"; sourceTree = "<group>"; };
 		175CD5C72626EDFD00A0EE37 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -84,6 +77,10 @@
 		175CD6412627418B00A0EE37 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		175CD646262741B500A0EE37 /* FilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBar.swift; sourceTree = "<group>"; };
 		175CD6532627422C00A0EE37 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		175CD6592627432500A0EE37 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		175CD65F2627435E00A0EE37 /* TaskListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModelTests.swift; sourceTree = "<group>"; };
+		175CD6672627446100A0EE37 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
+		175CD66C262744CC00A0EE37 /* TestTaskExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskExamples.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +99,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		175CD5972626DCB800A0EE37 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,7 +107,6 @@
 			children = (
 				175CD5802626DCB700A0EE37 /* EveryLifeCare */,
 				175CD5922626DCB800A0EE37 /* EveryLifeCareTests */,
-				175CD59D2626DCB800A0EE37 /* EveryLifeCareUITests */,
 				175CD57F2626DCB700A0EE37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,7 +116,6 @@
 			children = (
 				175CD57E2626DCB700A0EE37 /* EveryLifeCare.app */,
 				175CD58F2626DCB800A0EE37 /* EveryLifeCareTests.xctest */,
-				175CD59A2626DCB800A0EE37 /* EveryLifeCareUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +148,7 @@
 		175CD5922626DCB800A0EE37 /* EveryLifeCareTests */ = {
 			isa = PBXGroup;
 			children = (
+				175CD65E2627434200A0EE37 /* View Models */,
 				175CD62A2627252800A0EE37 /* TaskAPI */,
 				175CD60F26271E4E00A0EE37 /* DataStore */,
 				175CD60E26271E3F00A0EE37 /* HTTPClient */,
@@ -167,15 +156,6 @@
 				175CD5952626DCB800A0EE37 /* Info.plist */,
 			);
 			path = EveryLifeCareTests;
-			sourceTree = "<group>";
-		};
-		175CD59D2626DCB800A0EE37 /* EveryLifeCareUITests */ = {
-			isa = PBXGroup;
-			children = (
-				175CD59E2626DCB800A0EE37 /* EveryLifeCareUITests.swift */,
-				175CD5A02626DCB800A0EE37 /* Info.plist */,
-			);
-			path = EveryLifeCareUITests;
 			sourceTree = "<group>";
 		};
 		175CD5B82626E70100A0EE37 /* Data Model */ = {
@@ -202,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				175CD5D82626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift */,
+				175CD66C262744CC00A0EE37 /* TestTaskExamples.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -230,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				175CD5E02626EEC200A0EE37 /* URLSessionHTTPClientTests.swift */,
+				175CD6672627446100A0EE37 /* HTTPClientSpy.swift */,
 			);
 			path = HTTPClient;
 			sourceTree = "<group>";
@@ -265,6 +247,15 @@
 		175CD6582627424900A0EE37 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				175CD6592627432500A0EE37 /* TaskListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		175CD65E2627434200A0EE37 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				175CD65F2627435E00A0EE37 /* TaskListViewModelTests.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -310,24 +301,6 @@
 			productReference = 175CD58F2626DCB800A0EE37 /* EveryLifeCareTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		175CD5992626DCB800A0EE37 /* EveryLifeCareUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 175CD5A92626DCB800A0EE37 /* Build configuration list for PBXNativeTarget "EveryLifeCareUITests" */;
-			buildPhases = (
-				175CD5962626DCB800A0EE37 /* Sources */,
-				175CD5972626DCB800A0EE37 /* Frameworks */,
-				175CD5982626DCB800A0EE37 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				175CD59C2626DCB800A0EE37 /* PBXTargetDependency */,
-			);
-			name = EveryLifeCareUITests;
-			productName = EveryLifeCareUITests;
-			productReference = 175CD59A2626DCB800A0EE37 /* EveryLifeCareUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -343,10 +316,6 @@
 					175CD58E2626DCB800A0EE37 = {
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
-						TestTargetID = 175CD57D2626DCB700A0EE37;
-					};
-					175CD5992626DCB800A0EE37 = {
-						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 175CD57D2626DCB700A0EE37;
 					};
 				};
@@ -369,7 +338,6 @@
 			targets = (
 				175CD57D2626DCB700A0EE37 /* EveryLifeCare */,
 				175CD58E2626DCB800A0EE37 /* EveryLifeCareTests */,
-				175CD5992626DCB800A0EE37 /* EveryLifeCareUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -391,13 +359,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		175CD5982626DCB800A0EE37 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -410,6 +371,7 @@
 				175CD626262724CB00A0EE37 /* TaskMapper.swift in Sources */,
 				175CD5FA26271D4900A0EE37 /* SQLDatabase.swift in Sources */,
 				175CD5842626DCB700A0EE37 /* ContentView.swift in Sources */,
+				175CD65A2627432500A0EE37 /* TaskListViewModel.swift in Sources */,
 				175CD647262741B500A0EE37 /* FilterBar.swift in Sources */,
 				175CD6422627418B00A0EE37 /* BannerView.swift in Sources */,
 				175CD63A2627405000A0EE37 /* LoadingSpinnerView.swift in Sources */,
@@ -430,18 +392,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				175CD5D92626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				175CD66D262744CC00A0EE37 /* TestTaskExamples.swift in Sources */,
 				175CD5E12626EEC200A0EE37 /* URLSessionHTTPClientTests.swift in Sources */,
 				175CD634262736C900A0EE37 /* TaskAPITests.swift in Sources */,
+				175CD6602627435E00A0EE37 /* TaskListViewModelTests.swift in Sources */,
 				175CD61126271E8700A0EE37 /* SQLDatabaseTests.swift in Sources */,
+				175CD6682627446100A0EE37 /* HTTPClientSpy.swift in Sources */,
 				175CD62C2627253B00A0EE37 /* TaskMapperTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		175CD5962626DCB800A0EE37 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				175CD59F2626DCB800A0EE37 /* EveryLifeCareUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,11 +409,6 @@
 			isa = PBXTargetDependency;
 			target = 175CD57D2626DCB700A0EE37 /* EveryLifeCare */;
 			targetProxy = 175CD5902626DCB800A0EE37 /* PBXContainerItemProxy */;
-		};
-		175CD59C2626DCB800A0EE37 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 175CD57D2626DCB700A0EE37 /* EveryLifeCare */;
-			targetProxy = 175CD59B2626DCB800A0EE37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -668,46 +620,6 @@
 			};
 			name = Release;
 		};
-		175CD5AA2626DCB800A0EE37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7947CFF545;
-				INFOPLIST_FILE = EveryLifeCareUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.scmotech.EveryLifeCareUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EveryLifeCare;
-			};
-			name = Debug;
-		};
-		175CD5AB2626DCB800A0EE37 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7947CFF545;
-				INFOPLIST_FILE = EveryLifeCareUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.scmotech.EveryLifeCareUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EveryLifeCare;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -734,15 +646,6 @@
 			buildConfigurations = (
 				175CD5A72626DCB800A0EE37 /* Debug */,
 				175CD5A82626DCB800A0EE37 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		175CD5A92626DCB800A0EE37 /* Build configuration list for PBXNativeTarget "EveryLifeCareUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				175CD5AA2626DCB800A0EE37 /* Debug */,
-				175CD5AB2626DCB800A0EE37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
