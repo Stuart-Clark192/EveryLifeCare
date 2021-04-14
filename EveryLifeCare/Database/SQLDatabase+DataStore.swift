@@ -10,7 +10,7 @@ import GRDB
 
 extension SQLDatabase: TaskDataStore {
     
-    func saveTasks(tasks: [Task]) throws {
+    public func saveTasks(tasks: [Task]) throws {
         try pool.write { database in
             try tasks.forEach { task in
                 try task.save(database)

@@ -24,6 +24,11 @@
 		175CD60426271D9100A0EE37 /* SQLDatabase+DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD60326271D9100A0EE37 /* SQLDatabase+DataStore.swift */; };
 		175CD60926271DCF00A0EE37 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD60826271DCF00A0EE37 /* TaskDataStore.swift */; };
 		175CD61126271E8700A0EE37 /* SQLDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD61026271E8700A0EE37 /* SQLDatabaseTests.swift */; };
+		175CD61C2627249000A0EE37 /* TaskLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD61B2627249000A0EE37 /* TaskLoader.swift */; };
+		175CD621262724A900A0EE37 /* TaskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD620262724A900A0EE37 /* TaskAPI.swift */; };
+		175CD626262724CB00A0EE37 /* TaskMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD625262724CB00A0EE37 /* TaskMapper.swift */; };
+		175CD62C2627253B00A0EE37 /* TaskMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD62B2627253B00A0EE37 /* TaskMapperTests.swift */; };
+		175CD634262736C900A0EE37 /* TaskAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD633262736C900A0EE37 /* TaskAPITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,11 @@
 		175CD60326271D9100A0EE37 /* SQLDatabase+DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SQLDatabase+DataStore.swift"; sourceTree = "<group>"; };
 		175CD60826271DCF00A0EE37 /* TaskDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
 		175CD61026271E8700A0EE37 /* SQLDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLDatabaseTests.swift; sourceTree = "<group>"; };
+		175CD61B2627249000A0EE37 /* TaskLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLoader.swift; sourceTree = "<group>"; };
+		175CD620262724A900A0EE37 /* TaskAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAPI.swift; sourceTree = "<group>"; };
+		175CD625262724CB00A0EE37 /* TaskMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMapper.swift; sourceTree = "<group>"; };
+		175CD62B2627253B00A0EE37 /* TaskMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMapperTests.swift; sourceTree = "<group>"; };
+		175CD633262736C900A0EE37 /* TaskAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAPITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,7 @@
 		175CD5922626DCB800A0EE37 /* EveryLifeCareTests */ = {
 			isa = PBXGroup;
 			children = (
+				175CD62A2627252800A0EE37 /* TaskAPI */,
 				175CD60F26271E4E00A0EE37 /* DataStore */,
 				175CD60E26271E3F00A0EE37 /* HTTPClient */,
 				175CD5D72626EE4800A0EE37 /* Helpers */,
@@ -170,6 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				175CD5EA26271C7000A0EE37 /* HTTPClient */,
+				175CD61B2627249000A0EE37 /* TaskLoader.swift */,
+				175CD620262724A900A0EE37 /* TaskAPI.swift */,
+				175CD625262724CB00A0EE37 /* TaskMapper.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -216,6 +230,15 @@
 				175CD61026271E8700A0EE37 /* SQLDatabaseTests.swift */,
 			);
 			path = DataStore;
+			sourceTree = "<group>";
+		};
+		175CD62A2627252800A0EE37 /* TaskAPI */ = {
+			isa = PBXGroup;
+			children = (
+				175CD62B2627253B00A0EE37 /* TaskMapperTests.swift */,
+				175CD633262736C900A0EE37 /* TaskAPITests.swift */,
+			);
+			path = TaskAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +377,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175CD61C2627249000A0EE37 /* TaskLoader.swift in Sources */,
+				175CD621262724A900A0EE37 /* TaskAPI.swift in Sources */,
+				175CD626262724CB00A0EE37 /* TaskMapper.swift in Sources */,
 				175CD5FA26271D4900A0EE37 /* SQLDatabase.swift in Sources */,
 				175CD5842626DCB700A0EE37 /* ContentView.swift in Sources */,
 				175CD5C82626EDFD00A0EE37 /* HTTPClient.swift in Sources */,
@@ -373,7 +399,9 @@
 			files = (
 				175CD5D92626EE9E00A0EE37 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				175CD5E12626EEC200A0EE37 /* URLSessionHTTPClientTests.swift in Sources */,
+				175CD634262736C900A0EE37 /* TaskAPITests.swift in Sources */,
 				175CD61126271E8700A0EE37 /* SQLDatabaseTests.swift in Sources */,
+				175CD62C2627253B00A0EE37 /* TaskMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

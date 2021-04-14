@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import Combine
 
-protocol TaskDataStore {
+public protocol TaskDataStore {
     
     func saveTasks(tasks: [Task]) throws
+    
+    func dataObserver() -> AnyPublisher<[Task], Never>
 }
