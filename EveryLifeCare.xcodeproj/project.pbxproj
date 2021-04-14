@@ -29,6 +29,10 @@
 		175CD626262724CB00A0EE37 /* TaskMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD625262724CB00A0EE37 /* TaskMapper.swift */; };
 		175CD62C2627253B00A0EE37 /* TaskMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD62B2627253B00A0EE37 /* TaskMapperTests.swift */; };
 		175CD634262736C900A0EE37 /* TaskAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD633262736C900A0EE37 /* TaskAPITests.swift */; };
+		175CD63A2627405000A0EE37 /* LoadingSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD6392627405000A0EE37 /* LoadingSpinnerView.swift */; };
+		175CD6422627418B00A0EE37 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD6412627418B00A0EE37 /* BannerView.swift */; };
+		175CD647262741B500A0EE37 /* FilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD646262741B500A0EE37 /* FilterBar.swift */; };
+		175CD6542627422C00A0EE37 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD6532627422C00A0EE37 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		175CD625262724CB00A0EE37 /* TaskMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMapper.swift; sourceTree = "<group>"; };
 		175CD62B2627253B00A0EE37 /* TaskMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMapperTests.swift; sourceTree = "<group>"; };
 		175CD633262736C900A0EE37 /* TaskAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAPITests.swift; sourceTree = "<group>"; };
+		175CD6392627405000A0EE37 /* LoadingSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerView.swift; sourceTree = "<group>"; };
+		175CD6412627418B00A0EE37 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		175CD646262741B500A0EE37 /* FilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBar.swift; sourceTree = "<group>"; };
+		175CD6532627422C00A0EE37 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,8 @@
 		175CD5802626DCB700A0EE37 /* EveryLifeCare */ = {
 			isa = PBXGroup;
 			children = (
+				175CD6582627424900A0EE37 /* View Models */,
+				175CD6382627403300A0EE37 /* Views */,
 				175CD5F826271D3400A0EE37 /* Database */,
 				175CD5C62626EA0600A0EE37 /* Network */,
 				175CD5B82626E70100A0EE37 /* Data Model */,
@@ -239,6 +249,24 @@
 				175CD633262736C900A0EE37 /* TaskAPITests.swift */,
 			);
 			path = TaskAPI;
+			sourceTree = "<group>";
+		};
+		175CD6382627403300A0EE37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				175CD6392627405000A0EE37 /* LoadingSpinnerView.swift */,
+				175CD6412627418B00A0EE37 /* BannerView.swift */,
+				175CD646262741B500A0EE37 /* FilterBar.swift */,
+				175CD6532627422C00A0EE37 /* TaskView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		175CD6582627424900A0EE37 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,8 +410,12 @@
 				175CD626262724CB00A0EE37 /* TaskMapper.swift in Sources */,
 				175CD5FA26271D4900A0EE37 /* SQLDatabase.swift in Sources */,
 				175CD5842626DCB700A0EE37 /* ContentView.swift in Sources */,
+				175CD647262741B500A0EE37 /* FilterBar.swift in Sources */,
+				175CD6422627418B00A0EE37 /* BannerView.swift in Sources */,
+				175CD63A2627405000A0EE37 /* LoadingSpinnerView.swift in Sources */,
 				175CD5C82626EDFD00A0EE37 /* HTTPClient.swift in Sources */,
 				175CD60426271D9100A0EE37 /* SQLDatabase+DataStore.swift in Sources */,
+				175CD6542627422C00A0EE37 /* TaskView.swift in Sources */,
 				175CD5FF26271D6900A0EE37 /* DatabaseTable.swift in Sources */,
 				175CD5BA2626E71400A0EE37 /* Task.swift in Sources */,
 				175CD5822626DCB700A0EE37 /* EveryLifeCareApp.swift in Sources */,
