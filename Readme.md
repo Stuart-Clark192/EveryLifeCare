@@ -29,3 +29,7 @@ EveryLifeCareSecondRunWithNoConnection.mov Shows the app where Tasks have been d
 These were simulated using the Network Link Conditioner tool to simulate a network that has 100% packet loss
 
 EveryLifeCare.pdf is a diagram showing the flow through the application
+
+### Anything else
+
+Regarding the data being sent, I would probably look to see if we could amend that so that the tasks had a task type id rather than these being sent as strings, that way we would store the task types in a look up table and saves repeating data within the tasks, also for larger volumes of tasks and more users, this would help lower the data size being requested from the servers
