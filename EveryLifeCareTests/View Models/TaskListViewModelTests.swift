@@ -65,7 +65,7 @@ class TaskListViewModelTests: XCTestCase {
 
     func test_updateFilters_setsCorrectlyFilteredTasks() {
         let (sut, client, testQueue) = makeSUT()
-        let (medicationTask, task1Json) = TestTaskExamples.makeTask(id: 1, name: "Test", description: "Description", type: "medication")
+        let (_, task1Json) = TestTaskExamples.makeTask(id: 1, name: "Test", description: "Description", type: "medication")
         let (hydrationTask, task2Json) = TestTaskExamples.makeTask(id: 2, name: "Test2", description: "Description2", type: "hydration")
         let data = TestTaskExamples.makeTasksData([task1Json, task2Json])
         let exp = expectation(description: "tasks returned")
