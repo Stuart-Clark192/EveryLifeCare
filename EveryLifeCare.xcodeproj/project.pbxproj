@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		175CD5822626DCB700A0EE37 /* EveryLifeCareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5812626DCB700A0EE37 /* EveryLifeCareApp.swift */; };
 		175CD5862626DCB800A0EE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175CD5852626DCB800A0EE37 /* Assets.xcassets */; };
 		175CD5892626DCB800A0EE37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175CD5882626DCB800A0EE37 /* Preview Assets.xcassets */; };
-		175CD5B12626E65800A0EE37 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 175CD5B02626E65800A0EE37 /* GRDB */; };
 		175CD5BA2626E71400A0EE37 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5B92626E71400A0EE37 /* Task.swift */; };
 		175CD5C22626E72F00A0EE37 /* Task+Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5C12626E72F00A0EE37 /* Task+Fetchable.swift */; };
 		175CD5C82626EDFD00A0EE37 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD5C72626EDFD00A0EE37 /* HTTPClient.swift */; };
@@ -38,6 +37,8 @@
 		175CD67A26277B2800A0EE37 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD67926277B2800A0EE37 /* TaskList.swift */; };
 		175CD67F26277B5400A0EE37 /* TaskModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD67E26277B5400A0EE37 /* TaskModelBuilder.swift */; };
 		175CD68826277DB700A0EE37 /* SQLDatabase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CD68726277DB700A0EE37 /* SQLDatabase+Extensions.swift */; };
+		5DB7A57D683DB26C29ECF6E3 /* Pods_EveryLifeCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2189BFA6EFC55CEF5DB1E373 /* Pods_EveryLifeCareTests.framework */; };
+		C66B610400D5684996D1A6A8 /* Pods_EveryLifeCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B92FFD480A126106404EE33 /* Pods_EveryLifeCare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AA8CA1BCBCC828C49E293BB /* Pods-EveryLifeCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveryLifeCare.release.xcconfig"; path = "Target Support Files/Pods-EveryLifeCare/Pods-EveryLifeCare.release.xcconfig"; sourceTree = "<group>"; };
 		175CD57E2626DCB700A0EE37 /* EveryLifeCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryLifeCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175CD5812626DCB700A0EE37 /* EveryLifeCareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryLifeCareApp.swift; sourceTree = "<group>"; };
 		175CD5852626DCB800A0EE37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +87,11 @@
 		175CD67926277B2800A0EE37 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		175CD67E26277B5400A0EE37 /* TaskModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModelBuilder.swift; sourceTree = "<group>"; };
 		175CD68726277DB700A0EE37 /* SQLDatabase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SQLDatabase+Extensions.swift"; sourceTree = "<group>"; };
+		2189BFA6EFC55CEF5DB1E373 /* Pods_EveryLifeCareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveryLifeCareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F2182FBF1D24D8B9C7782B /* Pods-EveryLifeCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveryLifeCareTests.release.xcconfig"; path = "Target Support Files/Pods-EveryLifeCareTests/Pods-EveryLifeCareTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B92FFD480A126106404EE33 /* Pods_EveryLifeCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveryLifeCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB9345B4208D4A39A2EE091 /* Pods-EveryLifeCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveryLifeCareTests.debug.xcconfig"; path = "Target Support Files/Pods-EveryLifeCareTests/Pods-EveryLifeCareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADDC26640FFFECF78A7B411C /* Pods-EveryLifeCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveryLifeCare.debug.xcconfig"; path = "Target Support Files/Pods-EveryLifeCare/Pods-EveryLifeCare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				175CD5B12626E65800A0EE37 /* GRDB in Frameworks */,
+				C66B610400D5684996D1A6A8 /* Pods_EveryLifeCare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB7A57D683DB26C29ECF6E3 /* Pods_EveryLifeCareTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +120,8 @@
 				175CD5802626DCB700A0EE37 /* EveryLifeCare */,
 				175CD5922626DCB800A0EE37 /* EveryLifeCareTests */,
 				175CD57F2626DCB700A0EE37 /* Products */,
+				387C0CCE214BED4952C7E706 /* Pods */,
+				521AB95B16BBF5E87A4A19C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -282,6 +292,26 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		387C0CCE214BED4952C7E706 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC26640FFFECF78A7B411C /* Pods-EveryLifeCare.debug.xcconfig */,
+				0AA8CA1BCBCC828C49E293BB /* Pods-EveryLifeCare.release.xcconfig */,
+				9AB9345B4208D4A39A2EE091 /* Pods-EveryLifeCareTests.debug.xcconfig */,
+				31F2182FBF1D24D8B9C7782B /* Pods-EveryLifeCareTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		521AB95B16BBF5E87A4A19C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B92FFD480A126106404EE33 /* Pods_EveryLifeCare.framework */,
+				2189BFA6EFC55CEF5DB1E373 /* Pods_EveryLifeCareTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,9 +319,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 175CD5A32626DCB800A0EE37 /* Build configuration list for PBXNativeTarget "EveryLifeCare" */;
 			buildPhases = (
+				E3BF72D0B52B97AFA7016409 /* [CP] Check Pods Manifest.lock */,
 				175CD57A2626DCB700A0EE37 /* Sources */,
 				175CD57B2626DCB700A0EE37 /* Frameworks */,
 				175CD57C2626DCB700A0EE37 /* Resources */,
+				E0EA438D7DEFA51B3D7BFA57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,7 +331,6 @@
 			);
 			name = EveryLifeCare;
 			packageProductDependencies = (
-				175CD5B02626E65800A0EE37 /* GRDB */,
 			);
 			productName = EveryLifeCare;
 			productReference = 175CD57E2626DCB700A0EE37 /* EveryLifeCare.app */;
@@ -309,6 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 175CD5A62626DCB800A0EE37 /* Build configuration list for PBXNativeTarget "EveryLifeCareTests" */;
 			buildPhases = (
+				220C3AF2C3E8959FEA26A25B /* [CP] Check Pods Manifest.lock */,
 				175CD58B2626DCB800A0EE37 /* Sources */,
 				175CD58C2626DCB800A0EE37 /* Frameworks */,
 				175CD58D2626DCB800A0EE37 /* Resources */,
@@ -352,7 +384,6 @@
 			);
 			mainGroup = 175CD5752626DCB700A0EE37;
 			packageReferences = (
-				175CD5AF2626E65800A0EE37 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 			);
 			productRefGroup = 175CD57F2626DCB700A0EE37 /* Products */;
 			projectDirPath = "";
@@ -382,6 +413,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		220C3AF2C3E8959FEA26A25B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EveryLifeCareTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0EA438D7DEFA51B3D7BFA57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EveryLifeCare/Pods-EveryLifeCare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EveryLifeCare/Pods-EveryLifeCare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EveryLifeCare/Pods-EveryLifeCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3BF72D0B52B97AFA7016409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EveryLifeCare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		175CD57A2626DCB700A0EE37 /* Sources */ = {
@@ -555,6 +650,7 @@
 		};
 		175CD5A42626DCB800A0EE37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADDC26640FFFECF78A7B411C /* Pods-EveryLifeCare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -577,6 +673,7 @@
 		};
 		175CD5A52626DCB800A0EE37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA8CA1BCBCC828C49E293BB /* Pods-EveryLifeCare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -599,6 +696,7 @@
 		};
 		175CD5A72626DCB800A0EE37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB9345B4208D4A39A2EE091 /* Pods-EveryLifeCareTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -623,6 +721,7 @@
 		};
 		175CD5A82626DCB800A0EE37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F2182FBF1D24D8B9C7782B /* Pods-EveryLifeCareTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -675,25 +774,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		175CD5AF2626E65800A0EE37 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/groue/GRDB.swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		175CD5B02626E65800A0EE37 /* GRDB */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 175CD5AF2626E65800A0EE37 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
-			productName = GRDB;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 175CD5762626DCB700A0EE37 /* Project object */;
 }
