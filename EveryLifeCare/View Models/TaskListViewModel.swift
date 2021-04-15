@@ -37,7 +37,7 @@ class TaskListViewModel: ObservableObject {
     }
     
     func fetchTasks() {
-        
+        isError = false
         isLoading = true
         taskAPI
             .fetchTasks { [weak self] completion in
