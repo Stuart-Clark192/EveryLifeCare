@@ -30,9 +30,7 @@ struct TaskList: View {
                 }
             
                 List {
-                    ForEach(viewModel.taskList) { task in
-                        TaskView(task: task)
-                    }
+                    ForEach(viewModel.taskList, content: TaskView.init)
                 }
                 .listStyle(PlainListStyle())
                 
