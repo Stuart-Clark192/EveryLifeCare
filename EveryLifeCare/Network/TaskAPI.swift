@@ -27,7 +27,7 @@ public class TaskAPI: TaskLoader {
         dataStore.dataObserver()
     }
     
-    public init(dataStore: TaskDataStore, httpClient: HTTPClient, url: String = "https://adam-deleteme.s3.amazonaws.com/tasks.json") {
+    public init(dataStore: TaskDataStore, httpClient: HTTPClient, url: String = "some task url") {
         self.dataStore = dataStore
         self.httpClient = httpClient
         self.tasksURL = url
